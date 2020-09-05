@@ -33,4 +33,4 @@ namespace CourseOfferingApplicationProject.Services
              return coOrdinatoList;
          }
     }
-}.
+}
