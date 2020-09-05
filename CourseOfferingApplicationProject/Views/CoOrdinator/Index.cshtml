@@ -1,6 +1,29 @@
-﻿
+﻿@model  List<CourseOfferingApplicationProject.ViewModels.CoOrdinatorView>
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Co-Ordinator View</h2>
+<table>
+    <th>CourseName</th>
+    <th>CourseDescription</th>
+    <th>Students</th>
+    <th>Teachers</th>
+    @foreach(var item in @Model)
+    {
+        <td>
+            @item.CourseName
+        </td>
+        <td>
+            @item.CourseDescription
+        </td>
+        <td>
+            @item.Students
+        </td>
+         <td>
+            @item.Teachers
+        </td>
+    }
+
+
+</table>
